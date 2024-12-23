@@ -1,0 +1,259 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: blue;
+     
+  }
+  
+  header {
+    background-color: blue;
+    color: #fff;
+    padding: 20px 0;
+    height: 80px;
+  }
+  
+  header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+  }
+  
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header ul li {
+    margin-left: 20px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header ul li a:hover {
+    color: #ff9800;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+ /* Container for the About Me Section */
+#about .about-content {
+    display: flex;
+    align-items: center;  /* Align content vertically in the center */
+    justify-content: space-between;  /* Distribute the sections evenly */
+    gap: 60px;  /* Space between skills, bio, and profile image */
+  }
+  
+  /* Skills Section */
+  #about .skills {
+    flex: 1;  /* Takes up available space */
+    max-width: 200px;  /* Limit the width of the skills section */
+  }
+  
+  #about .skills ul.skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #about .skills ul.skills-list li {
+    margin: 5px 0;
+  }
+  
+  /* Bio Section */
+  #about .bio {
+    flex: 2;  /* Takes up more space than the skills section */
+    max-width: 600px;  /* Limit the width of the bio */
+  }
+  #about .bio p{
+    color: blue;
+    font-size: 23px;
+  }
+ 
+
+  /* Profile Image Section */
+  #about .profile-image {
+    flex-shrink: 0;  /* Prevent the image from shrinking */
+  }
+  
+  #about .profile-image img {
+    width: 450px;   /* Set the width of the profile image */
+    height: 450px;  /* Set the height of the profile image */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fills the circle */
+  }
+  
+  
+  .projects {
+    display: block;
+    justify-content: space-between;
+  }
+  
+  /* Styling for Project Cards */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 85%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .project-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e68900;
+  }
+  
+  /* Carousel Styling */
+  .project-carousel {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .project-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image.active {
+    display: block;
+  }
+  
+  /* Navigation Arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .project-card {
+      width: 100%;
+    }
+    .carousel-container {
+      flex-direction: column;
+    }
+    .carousel-image {
+      margin-bottom: 10px;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color:blue;
+    color: #fff;
+  }
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+.title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #666;
+}
+section {
+    margin: 40px 0;
+}
+h2 {
+   
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.skill {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
